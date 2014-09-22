@@ -82,7 +82,7 @@ p {
 }
 
 .row {
-	max-width: 1180px;
+	max-width: 708px;
 	margin: 0 auto;
 }
 
@@ -155,9 +155,9 @@ header .nav-left li {
 
 header .nav-left li a {
 	display: block;
-	font-size: 20px;
-	font-size: 2rem;
-	padding: 10px 25px;
+	font-size: 16px;
+	font-size: 1.6rem;
+	padding: 15px 14px;
 	font-weight: bold;
 }
 
@@ -183,12 +183,13 @@ header .nav-left li.drop a::after {
 	border-style: solid;
 	position: absolute;
 	top: 48%;
-	right: 12px;
+	right: 4px;
 }
 
 header .search {
-	margin: 18px 0 0 80px;
+	margin: 18px 0 0 20px;
 	width: 200px;
+	display: none;
 }
 
 header .search input {
@@ -231,7 +232,11 @@ header .nav-right a:hover {
 	color: #11161b;
 }
 
-header .nav-right .login {
+header .nav-right .submit {
+	display: none;
+}
+
+header .nav-right .login a {
 	color: #51aded;
 	line-height: 28px;
 	padding-left: 15px;
@@ -242,7 +247,7 @@ header .nav-right .login {
 	margin-left: 15px;
 }
 
-header .nav-right .login:hover {
+header .nav-right .login a:hover {
 	background: #51aded;
 	color: #fff;
 }
@@ -277,7 +282,7 @@ header.scrolled .nav-right .login {
 }
 
 .container .main {
-	width: 880px;
+	width: 100%;
 	float: left;
 }
 
@@ -297,8 +302,8 @@ header.scrolled .nav-right .login {
 }
 
 .headline article a {
-	width: 185px;
-	height: 160px;
+	width: 354px;
+	height: 322px;
 	display: table;
 }
 
@@ -310,21 +315,21 @@ header.scrolled .nav-right .login {
 }
 
 .headline article .topic h1 {
-	font-size: 14px;
-	font-size: 1.4rem;
+	font-size: 18px;
+	font-size: 1.8rem;
 	line-height: 1.6;
 }
 
 .headline article:first-child a {
-	height: 320px;
-	width: 480px;
+	height: 100%;
+	width: auto;
 	background: transparent;
 	display: block;
 }
 
 .headline article:first-child img {
-	width: 480px;
-	height: 320px;
+	width: 100%;
+	height: auto;
 	border: none;
 }
 
@@ -403,9 +408,7 @@ header.scrolled .nav-right .login {
 }
 
 .content {
-	float: left;
-	margin-left: 200px;
-	padding: 0 30px;
+	border-bottom: 1px solid #e6eaed;
 }
 
 .content h2 {
@@ -512,7 +515,7 @@ header.scrolled .nav-right .login {
 .content article .col-right {
 	float: left;
 	margin-left: 20px;
-	width: 420px;
+	width: 500px;
 }
 
 .content article .col-right h1 {
@@ -646,17 +649,13 @@ header.scrolled .nav-right .login {
 }
 
 /* aside */
-.aside {
-	width: 180px;
-	position: absolute;
-}
-
 .aside .tags {
 	padding-bottom: 20px;
 	border-bottom: 1px solid #e6eaed;
 }
 
 .aside .tags h2 {
+	padding-top: 20px;
 	font-size: 12px;
 	font-size: 1.2rem;
 	margin-bottom: 4px;
@@ -673,6 +672,8 @@ header.scrolled .nav-right .login {
 	line-height: 1.8;
 	font-size: 16px;
 	font-size: 1.6rem;
+	float: left;
+	margin-left: 8px;
 }
 
 .aside .tags ul li.tag-promoted a::after {
@@ -720,6 +721,7 @@ header.scrolled .nav-right .login {
 
 .aside .social .social-button ul {
 	margin: 0 auto;
+	width: 180px;
 }
 
 .aside .social .social-button ul li {
@@ -788,7 +790,7 @@ header.scrolled .nav-right .login {
 /* sidebar */
 .sidebar {
 	float: left;
-	display: block;
+	display: none;
 	width: 280px;
 }
 
@@ -975,6 +977,10 @@ footer .row div {
 	width: 24%;
 }
 
+footer .row div.footer-copyright {
+	float: right
+}
+
 footer .footer-partner li {
 	margin-bottom: 10px;
 }
@@ -990,4 +996,97 @@ footer .footer-copyright p, footer .footer-copyright a {
 
 footer .footer-copyright p {
 	margin-bottom: 10px;
+}
+
+/* responsive */
+
+@media screen and (min-width: 935px) {
+	.row {
+		max-width: 874px;
+	}
+
+	.content {
+		float: right;
+		margin-left: 200px;
+		padding-left: 30px;
+		border-bottom: none;
+	}
+
+	.container .main {
+		width: 880px;
+	}
+
+	header .search {
+		display: block;
+	}
+
+	.headline article:first-child a {
+		height: 320px;
+		width: 480px;
+	}
+
+	.headline article:first-child img {
+		width: 480px;
+		height: 320px;
+	}
+
+	.headline article a {
+		width: 200px;
+		height: 160px;
+	}
+
+	.headline article .topic h1 {
+		font-size: 14px;
+		font-size: 1.4rem;
+	}
+
+	.content article .col-right {
+		width: 420px;
+	}
+
+	.aside {
+		width: 180px;
+		position: absolute;
+	}
+
+	.aside .tags ul li {
+		float: none;
+		margin-left: 0;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.row {
+		max-width: 1180px;
+	}
+
+	header .nav-left li a {
+		font-size: 20px;
+		font-size: 2rem;
+		padding: 10px 25px;
+	}
+
+	header .search {
+		margin: 18px 0 0 80px;
+	}
+
+	header .nav-left li.drop a::after {
+		right: 12px;
+	}
+
+	header .nav-right .submit {
+		display: list-item;
+	}
+
+	.headline article a {
+		width: 185px;
+	}
+
+	.content {
+		padding: 0 30px;
+	}
+
+	.sidebar {
+		display: block;
+	}
 }
