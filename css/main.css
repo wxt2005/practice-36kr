@@ -784,3 +784,74 @@ header.scrolled .nav-right .login {
 .aside .social .social-button ul li:hover .count {
 	opacity: 1;
 }
+
+/* sidebar */
+.sidebar {
+	float: left;
+	display: block;
+	width: 280px;
+}
+
+.sidebar section {
+	margin-bottom: 30px;
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 1.5;
+	width: 280px;
+}
+
+.sidebar .sidebar-ad img {
+	max-width: 100%;
+}
+
+.sidebar .sidebar-tab {
+	border: 1px solid #e6eaed;
+}
+
+.sidebar .sidebar-tab .tabs li {
+	float: left;
+	width: 92px;
+	height: 34px;
+	text-align: center;
+	line-height: 34px;
+	border-bottom: 1px solid #e6eaed;
+	border-left: 1px solid #e6eaed;
+}
+
+.sidebar .sidebar-tab .tabs li:first-child {
+	border-left: none;
+	width: 94px;
+}
+
+.sidebar .sidebar-tab .tabs li a {
+	color: #51aded;
+	font-weight: bold;
+}
+
+.sidebar .sidebar-tab .tabs li.selected {
+	background: #e6eaed;
+}
+
+.sidebar .sidebar-tab .tabs li.selected a {
+	color: #747f8c;
+}
+
+.sidebar .tabs-content {
+	padding: 10px 20px;
+	display: none;
+}
+
+.sidebar .tabs-content ul li {
+	margin-bottom: 10px;
+}
+
+.sidebar .tabs-content ul li h2 a {
+	padding-left: 5px;
+	margin-left: -5px;
+	border-left: 4px solid #51aded;
+	font-weight: bold;
+}
+
+.sidebar .tabs-content.forum-content {
+	display: block;
+}
