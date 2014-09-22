@@ -455,6 +455,14 @@ header.scrolled .nav-right .login {
 	color: #3331c8;
 }
 
+.content article .info .info-left .breaking a {
+	color: #509c3b;
+}
+
+.content article .info .info-left .breaking a:hover {
+	color: #509c3b;
+}
+
 .content article .info .info-right {
 	float: right;
 	font-size: 12px;
@@ -588,4 +596,51 @@ header.scrolled .nav-right .login {
 	color: #fff;
 	font-size: 20px;
 	font-size: 2rem;
+}
+
+/* control */
+.content .control {
+	font-size: 14px;
+	font-size: 1.4rem;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.content .control a {
+	display: block;
+	padding-right: 25px;
+	padding-left: 25px;
+	height: 30px;
+	border: 2px solid #51aded;
+	border-radius: 25px;
+	color: #51aded;
+	line-height: 30px;
+}
+
+.content .control a span {
+	font-weight: bold;
+}
+
+.content .control a:hover {
+	color: #fff;
+	background: #51aded;
+}
+
+.content .control .prev {
+	float: left;
+}
+
+.content .control .next {
+	float: right;
+}
+
+.content .control .disabled a {
+	cursor: not-allowed;
+	border-color: #9e9e9e;
+	color: #9e9e9e;
+}
+
+.content .control .disabled a:hover {
+	background: #9e9e9e;
+	color: #fff;
 }
