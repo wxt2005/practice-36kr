@@ -891,3 +891,52 @@ header.scrolled .nav-right .login {
 .sidebar .sidebar-sponsor ul li img {
 	max-width: 100%;
 }
+
+.sidebar .sidebar-comments .comment-info {
+	font-size: 12px;
+	font-size: 1.2rem;
+}
+
+.sidebar .sidebar-comments li {
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #e6eaed;
+}
+
+.sidebar .sidebar-comments .comment-info a {
+	color: #51aded;
+}
+
+.sidebar .sidebar-comments .comment-info .time::before {
+	content: "\00A0\2022\00A0";
+}
+
+.sidebar .sidebar-comments .comment-content p {
+	font-size: 14px;
+	font-size: 1.4rem;
+	color: #38485a;
+	padding: 10px 20px;
+	border-radius: 3px;
+	background: #e6eaed;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.sidebar .sidebar-comments .comment-content p::before {
+	content: "";
+	border-color: transparent transparent #e6eaed transparent;
+	border-style: solid;
+	border-width: 5px;
+	position: absolute;
+	top: -10px;
+}
+
+.sidebar .sidebar-comments .comment-title p {
+	font-size: 12px;
+	font-size: 1.2rem;
+}
+
+.sidebar .sidebar-comments .comment-title p a {
+	margin-left: 0.5em;
+}
