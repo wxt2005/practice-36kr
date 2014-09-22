@@ -644,3 +644,143 @@ header.scrolled .nav-right .login {
 	background: #9e9e9e;
 	color: #fff;
 }
+
+/* aside */
+.aside {
+	width: 180px;
+	position: absolute;
+}
+
+.aside .tags {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #e6eaed;
+}
+
+.aside .tags h2 {
+	font-size: 12px;
+	font-size: 1.2rem;
+	margin-bottom: 4px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.aside .tags ul {
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+.aside .tags ul li {
+	line-height: 1.8;
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+
+.aside .tags ul li.tag-promoted a::after {
+	content: "Promoted";
+	display: inline-block;
+	color: #fff;
+	font-size: 10px;
+	font-size: 1rem;
+	background: #B6BCC4;
+	border-radius: 3px;
+	padding: 1px 4px;
+	margin-left: 5px;
+	font-style: italic;
+	font-weight: normal;
+	letter-spacing: 0.1em;
+}
+
+.aside .tags ul li.tag-new a::after {
+	content: "\00A0\2022\00A0";
+	color: #56AEEA;
+}
+
+.aside .social {
+	padding-bottom: 20px;
+	padding-top: 30px;
+}
+
+.aside .social p {
+	font-size: 12px;
+	font-size: 1.2rem;
+	margin-bottom: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+	text-align: center;
+}
+
+.aside .social .qrcode {
+	width: 162px;
+	margin: 0 auto 20px auto;
+}
+
+.aside .social .qrcode img {
+	width: 100%;
+}
+
+.aside .social .social-button ul {
+	margin: 0 auto;
+}
+
+.aside .social .social-button ul li {
+	float: left;
+	margin: 0 6px;
+	position: relative;
+}
+
+.aside .social .social-button ul li a {
+	display: block;
+	width: 32px;
+	height: 32px;
+	background: url("../images/social-logos.png") no-repeat;
+	text-indent: -9999px;
+}
+
+.aside .social .social-button ul li.weibo a {
+	background-position: 0 0;
+}
+
+.aside .social .social-button ul li.twitter a {
+	background-position: -32px 0;
+}
+
+.aside .social .social-button ul li.facebook a {
+	background-position: -64px 0;
+}
+
+.aside .social .social-button ul li.rss a {
+	background-position: -96px 0;
+}
+
+.aside .social .social-button ul li .count {
+	font-size: 14px;
+	font-size: 1.4rem;
+	position: absolute;
+	left: -10px;
+	width: 34px;
+	text-align: center;
+	margin-top: 10px;
+	padding: 2px 8px;
+	background: rgba(0,0,0,0.76);
+	border-radius: 3px;
+	color: #fff;
+	opacity: 0;
+	transition: opacity 0.2s ease-in-out;
+}
+
+.aside .social .social-button ul li .count::before {
+	content: "";
+	height: 0;
+	width: 0;
+	border-color: transparent transparent rgba(0,0,0,0.76) transparent;
+	border-width: 6px;
+	border-style: solid;
+	left: 50%;
+	margin-left: -5px;
+	position: absolute;
+	top: -12px;
+}
+
+.aside .social .social-button ul li:hover .count {
+	opacity: 1;
+}
