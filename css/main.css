@@ -77,6 +77,19 @@ input::-webkit-search-cancel-button {
 	display: none;
 }
 
+.clearfix::after {
+	content: ".";
+	display: block;
+	clear: both;
+	visbility: hidden;
+	height: 0;
+	width: 0;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
 /* header */
 header {
 	height: 64px;
@@ -277,7 +290,6 @@ header.scrolled .nav-right .login {
 	display: table-cell;
 	vertical-align: middle;
 	width: 100%;
-	overflow: hidden;
 }
 
 .headline article .topic h1 {
@@ -291,7 +303,6 @@ header.scrolled .nav-right .login {
 	width: 480px;
 	background: transparent;
 	display: block;
-	overflow: hidden;
 }
 
 .headline article:first-child img {
@@ -306,7 +317,7 @@ header.scrolled .nav-right .login {
 	bottom: 20px;
 	left: 20px;
 	right: 20px;
-	line-height: 1.2;
+	line-height: 1.5;
 	position: absolute;
 	z-index: 3;
 }
