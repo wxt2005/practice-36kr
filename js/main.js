@@ -40,10 +40,7 @@ $(function() {
             index = $target.index();
             $target.addClass('selected');
         }
-        for (i = 0, l = $sideBarTabContents.length; i < l; i++) {
-            $sideBarTabContents[i].style.display = "none";
-        }
-        $sideBarTabContents[index].style.display = "block";
+        $sideBarTabContents.hide().eq(index).show();
         return false;
     });
 
@@ -52,13 +49,12 @@ $(function() {
      */
     $dropButtons.click(function() {
         var $button = $(this);
-        $dropMenus.each(function() {
-            if ($(this).is(!$button.next())) {
-                $(this).hide();
-            } else {
-                $(this).toggle();
-            }
-        });
+        if ($button.next().css('display') === 'none') {
+            $dropMenus.hide();
+            $button.next().show();
+        } else {
+            $button.next().hide();
+        }
         return false;
     });
 });
