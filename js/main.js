@@ -12,6 +12,7 @@ $(function() {
     var $sideBarTabContents = $('.sidebar-tab .tabs-content');
     var $header = $('header');
     var $dropButtons = $header.find('li.drop a');
+    var $dropMenus = $header.find('li.drop .drop-menu');
     var i = 0, l = 0;
 
     /**
@@ -46,8 +47,18 @@ $(function() {
         return false;
     });
 
+    /**
+     * 导航栏下拉菜单按钮事件
+     */
     $dropButtons.click(function() {
-        $(this).next().toggle();
+        var $button = $(this);
+        $dropMenus.each(function() {
+            if ($(this).is(!$button.next())) {
+                $(this).hide();
+            } else {
+                $(this).toggle();
+            }
+        });
         return false;
     });
 });
