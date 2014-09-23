@@ -1055,6 +1055,7 @@ footer .footer-copyright p {
 		position: fixed;
 		border-bottom: none;
 		height: 64px;
+		transition: 0.2s ease;
 	}
 
 	header .row {
