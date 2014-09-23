@@ -83,8 +83,8 @@ p {
 
 .row {
 	margin: 0 auto;
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 input::-webkit-search-decoration,
@@ -154,10 +154,6 @@ header .nav-left {
 header .nav-left li {
 	text-align: center;
 	width: 25%;
-}
-
-header .nav-left .more {
-	display: none;
 }
 
 header .nav-left li a {
@@ -257,6 +253,10 @@ header .mini a {
 	border-left: 1px solid #e6eaed;
 }
 
+header .mini .search-button {
+	display: none;
+}
+
 header .mini .search-button a,
 header .mini .menu-button a {
 	background: url("../images/mini-button.png") no-repeat;
@@ -333,8 +333,8 @@ header .mini .search-button a {
 }
 
 .headline article:first-child h1 {
-	font-size: 24px;
-	font-size: 2.4rem;
+	font-size: 18px;
+	font-size: 1.8rem;
 	bottom: 20px;
 	left: 20px;
 	right: 20px;
@@ -485,17 +485,7 @@ header .mini .search-button a {
 }
 
 .content article .col-left .replies {
-	position: absolute;
-	width: 44px;
-	height: 22px;
-	background: url("../images/reply.png") 25% 50% no-repeat #F7464F;
-	padding: 5px 10px;
-	left: 0;
-	top: 0;
-	font-size: 12px;
-	font-size: 1.2rem;
-	color: #fff;
-	line-height: 22px;
+	display: none;
 }
 
 .content article .col-left .replies span {
@@ -503,8 +493,8 @@ header .mini .search-button a {
 }
 
 .content article .col-left .news-image {
-	width: 180px;
-	height: 120px;
+	width: 60px;
+	height: 60px;
 }
 
 .content article .col-left img {
@@ -512,14 +502,15 @@ header .mini .search-button a {
 }
 
 .content article .col-right {
-	margin-left: 200px;
+	margin-left: 100px;
 }
 
 .content article .col-right h1 {
-	font-size: 20px;
-	font-size: 2rem;
 	margin-bottom: 20px;
 	font-weight: bold;
+	font-size: 16px;
+	font-size: 1.6rem;
+	word-break: break-all;
 }
 
 .content article .col-right h1 a {
@@ -533,42 +524,21 @@ header .mini .search-button a {
 .content article .col-right p {
 	font-size: 16px;
 	font-size: 1.6rem;
+	display: none;
 }
 
-/* advertisement */
-.content article.news-ad h1 {
-	font-size: 20px;
-	font-size: 2rem;
-	margin-bottom: 20px;
-}
-
-.content article.news-ad .info .info-right a {
-	color: #51aded;
-}
-
-.content article.news-ad p a {
-	color: #747f8c;
-}
-
-.content article.news-ad p a:hover {
-	color: #51aded;
-}
-
-.content article.news-ad .col-right {
-	width: 100px;
-	height: 100px;
-	float: right;
-	margin: 0;
+.content article.news-ad {
+	display: none;
 }
 
 .content article.news-warp img {
 	max-width: 100%;
+	display: block;
 }
 
 .content article.news-warp a {
 	display: block;
 	position: relative;
-	height: 170px;
 	overflow: hidden;
 }
 
@@ -594,8 +564,8 @@ header .mini .search-button a {
 	position: absolute;
 	z-index: 3;
 	color: #fff;
-	font-size: 20px;
-	font-size: 2rem;
+	font-size: 16px;
+	font-size: 1.6rem;
 }
 
 /* control */
@@ -786,7 +756,6 @@ header .mini .search-button a {
 
 /* sidebar */
 .sidebar {
-	float: left;
 	display: none;
 	width: 280px;
 }
@@ -991,6 +960,85 @@ footer .footer-copyright p {
 }
 
 /* responsive */
+@media screen and (min-width: 481px) {
+	.row {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.headline article:first-child h1 {
+		font-size: 24px;
+		font-size: 2.4rem;
+	}
+
+	.content article .col-left .replies {
+		display: block;
+		position: absolute;
+		width: 44px;
+		height: 22px;
+		background: url("../images/reply.png") 25% 50% no-repeat #F7464F;
+		padding: 5px 10px;
+		left: 0;
+		top: 0;
+		font-size: 12px;
+		font-size: 1.2rem;
+		color: #fff;
+		line-height: 22px;
+	}
+
+	.content article .col-left .news-image {
+		width: 180px;
+		height: 120px;
+	}
+
+	.content article .col-right {
+		margin-left: 200px;
+	}
+
+	.content article .col-right h1 {
+		font-size: 20px;
+		font-size: 2rem;
+	}
+
+	.content article .col-right p {
+		display: none;
+	}
+
+	.content article.news-ad h1 {
+		display: block;
+	}
+
+	.content article.news-ad h1 {
+		font-size: 20px;
+		font-size: 2rem;
+		margin-bottom: 20px;
+	}
+
+	.content article.news-ad .info .info-right a {
+		color: #51aded;
+	}
+
+	.content article.news-ad p a {
+		color: #747f8c;
+	}
+
+	.content article.news-ad p a:hover {
+		color: #51aded;
+	}
+
+	.content article.news-ad .col-right {
+		width: 100px;
+		height: 100px;
+		float: right;
+		margin: 0;
+	}
+
+	.content article.news-warp h1 {
+		font-size: 20px;
+		font-size: 2rem;
+	}
+}
+
 @media screen and (min-width: 770px) {
 	.row {
 		max-width: 708px;
@@ -1035,10 +1083,6 @@ footer .footer-copyright p {
 
 	header .nav-left li {
 		padding: 15px 14px;
-	}
-
-	header .nav-left .more {
-		display: list-item;
 	}
 
 	header .nav-left li.drop a::after {
@@ -1142,7 +1186,7 @@ footer .footer-copyright p {
 	}
 
 	.headline article a {
-		width: 200px;
+		width: 197px;
 		height: 160px;
 	}
 
@@ -1195,6 +1239,10 @@ footer .footer-copyright p {
 		margin: 18px 0 0 80px;
 	}
 
+	header .nav-left li {
+		padding: 0;
+	}
+
 	header .nav-left li.drop a::after {
 		right: 12px;
 	}
@@ -1213,5 +1261,6 @@ footer .footer-copyright p {
 
 	.sidebar {
 		display: block;
+		float: right;
 	}
 }
