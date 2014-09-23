@@ -160,7 +160,6 @@ header .nav-left li a {
 	display: block;
 	font-size: 16px;
 	font-size: 1.6rem;
-	padding: 8px 0;
 	font-weight: bold;
 }
 
@@ -1072,7 +1071,6 @@ footer .footer-copyright p {
 
 	header .nav-left {
 		margin-left: 20px;
-		margin-top: 8px;
 		border-top: none;
 		width: auto;
 	}
@@ -1082,7 +1080,10 @@ footer .footer-copyright p {
 	}
 
 	header .nav-left li {
-		padding: 15px 14px;
+		padding: 0 14px;
+	}
+	header .nav-left li a {
+		line-height: 64px;
 	}
 
 	header .nav-left li.drop a::after {
@@ -1122,7 +1123,7 @@ footer .footer-copyright p {
 		background-position: 0 -30px;
 	}
 
-	header.scrolled .nav-right .login {
+	header.scrolled .nav-right .login a {
 		background: #51aded;
 		color: #fff;
 	}
@@ -1130,7 +1131,6 @@ footer .footer-copyright p {
 	.headline article {
 		display: block;
 	}
-
 }
 
 @media screen and (min-width: 935px) {
@@ -1229,18 +1229,18 @@ footer .footer-copyright p {
 		max-width: 1180px;
 	}
 
-	header .nav-left li a {
-		font-size: 20px;
-		font-size: 2rem;
-		padding: 10px 25px;
-	}
-
 	header .search {
 		margin: 18px 0 0 80px;
 	}
 
 	header .nav-left li {
 		padding: 0;
+	}
+
+	header .nav-left li a {
+		font-size: 20px;
+		font-size: 2rem;
+		padding: 0 25px;
 	}
 
 	header .nav-left li.drop a::after {
