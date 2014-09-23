@@ -10,6 +10,8 @@ $(function() {
     var $window = $(window);
     var $sideBarTab = $('.sidebar-tab .tabs');
     var $sideBarTabContents = $('.sidebar-tab .tabs-content');
+    var $header = $('header');
+    var $dropButtons = $header.find('li.drop a');
     var i = 0, l = 0;
 
     /**
@@ -41,6 +43,11 @@ $(function() {
             $sideBarTabContents[i].style.display = "none";
         }
         $sideBarTabContents[index].style.display = "block";
+        return false;
+    });
+
+    $dropButtons.click(function() {
+        $(this).next().toggle();
         return false;
     });
 });
