@@ -127,6 +127,7 @@ header .logo {
 	float: left;
 	text-indent: -9999px;
 	position: relative;
+	transition: 0.2s ease;
 }
 
 header .logo span {
