@@ -241,29 +241,6 @@ header .nav-right .login a:hover {
 	color: #fff;
 }
 
-/* header scrolled */
-header.scrolled {
-	box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-}
-
-header.scrolled .row {
-	height: 64px;
-}
-
-header.scrolled .logo {
-	height: 64px;
-	background: #fff;
-}
-
-header.scrolled .logo span {
-	background-position: 0 -30px;
-}
-
-header.scrolled .nav-right .login {
-	background: #51aded;
-	color: #fff;
-}
-
 /* mini header */
 header .mini {
 	float: right;
@@ -1081,6 +1058,29 @@ footer .footer-copyright p {
 	header .mini .search-button a,
 	header .mini .menu-button a {
 		background: transparent;
+	}
+
+	/* header scrolled */
+	header.scrolled {
+		box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+	}
+
+	header.scrolled .row {
+		height: 64px;
+	}
+
+	header.scrolled .logo {
+		height: 64px;
+		background: #fff;
+	}
+
+	header.scrolled .logo span {
+		background-position: 0 -30px;
+	}
+
+	header.scrolled .nav-right .login {
+		background: #51aded;
+		color: #fff;
 	}
 
 	.headline article {
