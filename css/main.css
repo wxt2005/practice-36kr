@@ -1093,7 +1093,7 @@ footer .footer-copyright p {
 		line-height: 64px;
 	}
 
-	header .nav-left li.drop a::after {
+	header .nav-left li.drop > a::after {
 		content: "";
 		border-color: #51aded transparent transparent transparent;
 		border-width: 4px;
@@ -1114,6 +1114,7 @@ footer .footer-copyright p {
 
 	/* header scrolled */
 	header.scrolled {
+		-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
 		box-shadow: 0 1px 3px rgba(0,0,0,0.2);
 	}
 
@@ -1133,6 +1134,82 @@ footer .footer-copyright p {
 	header.scrolled .nav-right .login a {
 		background: #51aded;
 		color: #fff;
+	}
+
+	header .nav-left .drop-menu {
+		position: absolute;
+		background: #fff;
+		z-index: 100;
+		width: 230px;
+		border: 1px solid #e6eaed;
+		border-radius: 3px;
+		-webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+		box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+		margin-top: -5px;
+		display: none;
+	}
+
+	header .nav-left .drop-menu::before {
+		content: "";
+		height: 12px;
+		width: 20px;
+		position: absolute;
+		top: -12px;
+		background: url("../images/triangle.png");
+		left: 20%;
+		margin-left: -20px;
+	}
+
+	header .nav-left .drop-menu li a {
+		line-height: 1;
+		color: #5F7083;
+	}
+
+	header .nav-left .drop-menu li a:hover {
+		color: #51aded;
+	}
+
+	header .nav-left .drop-menu li  a.product-img {
+		width: 50px;
+		height: 50px;
+		float: left;
+		margin-right: 10px;
+		text-indent: -9999px;
+		background: url("../images/products.png")
+	}
+
+	header .nav-left .drop-menu li  a.product-img.next {
+		background-position: -50px;
+	}
+
+	header .nav-left .drop-menu li  a.product-img.keplus {
+		background-position: -100px;
+	}
+
+	header .nav-left .drop-menu li  a.product-img.wise {
+		background-position: -150px;
+	}
+
+	header .nav-left .drop-menu li  a.product-img.bj {
+		background-position: -200px;
+	}
+
+	header .nav-left .drop-menu li {
+		padding: 10px;
+		border-bottom: 1px solid #e6eaed;
+		display: block;
+		width: 210px;
+	}
+
+	header .nav-left .drop-menu li h3,
+	header .nav-left .drop-menu li span {
+		text-align: left;
+		display: block;
+	}
+
+	header .nav-left .drop-menu li h3 {
+		margin-bottom: 10px;
+		margin-top: 5px;
 	}
 
 	.headline article {
@@ -1177,6 +1254,7 @@ footer .footer-copyright p {
 		width: 70%;
 		box-sizing: content-box;
 		margin: 0;
+		-webkit-box-shadow: inset 0 0 4px 0 rgba(0,0,0,0.1);
 		box-shadow: inset 0 0 4px 0 rgba(0,0,0,0.1);
 		transition: 0.3s ease;
 		height: auto;
