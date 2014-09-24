@@ -48,7 +48,6 @@ $(function() {
      * 导航栏下拉菜单按钮事件
      */
     $dropButtons.find('> a').click(function() {
-        var $button = $(this);
         if (!$(this).parent().hasClass('active')) {
             $dropButtons.removeClass('active');
             $(this).parent().addClass('active');
