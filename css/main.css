@@ -1136,6 +1136,8 @@ footer .footer-copyright p {
 		color: #fff;
 	}
 
+	/* dropdown menu */
+
 	header .nav-left .drop-menu {
 		position: absolute;
 		background: #fff;
@@ -1147,6 +1149,7 @@ footer .footer-copyright p {
 		box-shadow: 0 2px 3px rgba(0,0,0,0.2);
 		margin-top: -5px;
 		display: none;
+		left: 0%;
 	}
 
 	header .nav-left .drop-menu::before {
@@ -1157,7 +1160,7 @@ footer .footer-copyright p {
 		top: -12px;
 		background: url("../images/triangle.png");
 		left: 20%;
-		margin-left: -20px;
+		margin-left: -5px;
 	}
 
 	header .nav-left .drop-menu li a {
@@ -1169,7 +1172,7 @@ footer .footer-copyright p {
 		color: #51aded;
 	}
 
-	header .nav-left .drop-menu li  a.product-img {
+	header .nav-left .drop-menu li a.product-img {
 		width: 50px;
 		height: 50px;
 		float: left;
@@ -1194,7 +1197,7 @@ footer .footer-copyright p {
 		background-position: -200px;
 	}
 
-	header .nav-left .drop-menu li {
+	header .nav-left .drop-menu > ul > li {
 		padding: 10px;
 		border-bottom: 1px solid #e6eaed;
 		display: block;
@@ -1202,6 +1205,7 @@ footer .footer-copyright p {
 	}
 
 	header .nav-left .drop-menu li h3,
+	header .nav-left .drop-menu li h2,
 	header .nav-left .drop-menu li span {
 		text-align: left;
 		display: block;
@@ -1210,6 +1214,153 @@ footer .footer-copyright p {
 	header .nav-left .drop-menu li h3 {
 		margin-bottom: 10px;
 		margin-top: 5px;
+	}
+
+	header .nav-left .drop-menu li .event-date {
+		width: 40px;
+		height: 40px;
+		background: #51aded;
+		padding: 5px;
+		float: left;
+		margin-right: 10px;
+	}
+
+	header .nav-left .drop-menu li .event-date span {
+		color: #fff;
+		text-align: center;
+	}
+
+	header .nav-left .drop-menu li .event-date span.month {
+		font-size: 12px;
+		font-size: 1.2rem;
+	}
+
+	header .nav-left .drop-menu li .event-date span.day {
+		font-size: 24px;
+		font-size: 2.4rem;
+		font-weight: bold;
+		margin-top: -8px;
+	}
+
+	header .nav-left .drop-menu li a.all {
+		display: block;
+		width: 150px;
+		height: 32px;
+		color: #fff;
+		font-size: 12px;
+		font-size: 1.2rem;
+		line-height: 32px;
+		text-align: center;
+		background: #51aded;
+		margin: 10px auto;
+	}
+
+	header .nav-left .drop-menu li a.all:hover {
+		background: #2397e8;
+	}
+
+	header .nav-left .drop-menu li.topic ul,
+	header .nav-left .drop-menu li.category ul {
+		padding: 0 8px;
+	}
+
+	header .nav-left .drop-menu li.category h2,
+	header .nav-left .drop-menu li.topic h2 {
+		font-size: 12px;
+		font-size: 1.2rem;
+		margin-bottom: 5px;
+		font-weight: bold;
+	}
+
+	header .nav-left .drop-menu li.category li {
+		width: 50%;
+		padding: 0;
+		text-align: left;
+		margin-bottom: 10px;
+	}
+
+	header .nav-left .drop-menu li.category a {
+		font-size: 14px;
+		font-size: 1.4rem;
+	}
+
+	header .nav-left .drop-menu li.topic li {
+		width: 100%;
+		text-align: left;
+		font-size: 14px;
+		font-size: 1.4rem;
+		padding: 0;
+		margin-bottom: 5px;
+	}
+
+	header .nav-left .drop-menu li.topic li a {
+		display: inline;
+		font-size: 14px;
+		font-size: 1.4rem;
+	}
+
+	header .nav-left .drop-menu li.topic li.startups a {
+		color: #ff905a;
+	}
+
+	header .nav-left .drop-menu li.topic li.startups a:hover {
+		color: #ff6e27;
+	}
+
+	header .nav-left .drop-menu li.topic li.products a {
+		color: #66bc4e;
+	}
+
+	header .nav-left .drop-menu li.topic li.products a:hover {
+		color: #509c3b;
+	}
+
+	header .nav-left .drop-menu li.topic li.apps a {
+		color: #3c8fe6;
+	}
+
+	header .nav-left .drop-menu li.topic li.apps a:hover {
+		color: #1b75d4;
+	}
+
+	header .nav-left .drop-menu li.topic li.tech a {
+		color: #34aadc;
+	}
+
+	header .nav-left .drop-menu li.topic li.tech a:hover {
+		color: #218ebd;
+	}
+
+	header .nav-left .drop-menu li.topic li.web a {
+		color: #5856d6;
+	}
+
+	header .nav-left .drop-menu li.topic li.web a:hover {
+		color: #3331c8;
+	}
+
+	header .nav-left .drop-menu li.topic li.people a {
+		color: #fc0;
+	}
+
+	header .nav-left .drop-menu li.topic li.people a:hover {
+		color: #cca300;
+	}
+
+	header .nav-left .drop-menu li.topic li.brands a {
+		color: #ff3b30;
+	}
+
+	header .nav-left .drop-menu li.topic li.brands a:hover {
+		color: #fc0d00;
+	}
+
+	header .nav-left .drop-menu li.topic li.devices a {
+		color: #19d5fd;
+	}
+
+	header .nav-left .drop-menu li.topic li.devices a:hover {
+		color: #02bae1;
 	}
 
 	.container {
@@ -1323,7 +1474,7 @@ footer .footer-copyright p {
 		padding: 0;
 	}
 
-	header .nav-left li a {
+	header .nav-left > ul > li > a {
 		font-size: 20px;
 		font-size: 2rem;
 		padding: 0 25px;
@@ -1335,6 +1486,14 @@ footer .footer-copyright p {
 
 	header .nav-right .submit {
 		display: list-item;
+	}
+
+	header .nav-left .drop-menu {
+		left: 20%;
+	}
+
+	header .nav-left .drop-menu::before {
+		margin-left: 0px;
 	}
 
 	.headline article a {
