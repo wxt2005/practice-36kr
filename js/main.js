@@ -11,7 +11,7 @@ $(function() {
     var $sideBarTab = $('.sidebar-tab .tabs');
     var $sideBarTabContents = $('.sidebar-tab .tabs-content');
     var $header = $('header');
-    var $dropButtons = $header.find('li.drop a');
+    var $dropButtons = $header.find('li.drop');
     var $dropMenus = $header.find('li.drop .drop-menu');
     var i = 0, l = 0;
 
@@ -47,13 +47,13 @@ $(function() {
     /**
      * 导航栏下拉菜单按钮事件
      */
-    $dropButtons.click(function() {
+    $dropButtons.find('> a').click(function() {
         var $button = $(this);
-        if ($button.next().css('display') === 'none') {
-            $dropMenus.hide();
-            $button.next().show();
+        if (!$(this).parent().hasClass('active')) {
+            $dropButtons.removeClass('active');
+            $(this).parent().addClass('active');
         } else {
-            $button.next().hide();
+            $dropButtons.removeClass('active');
         }
         return false;
     });
@@ -62,6 +62,6 @@ $(function() {
      * 页面点击关闭下拉菜单事件
      */
     $('html').click(function() {
-        $dropMenus.hide();
+        $dropButtons.removeClass('active');
     });
 });

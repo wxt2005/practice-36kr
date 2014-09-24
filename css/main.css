@@ -1137,7 +1137,6 @@ footer .footer-copyright p {
 	}
 
 	/* dropdown menu */
-
 	header .nav-left .drop-menu {
 		position: absolute;
 		background: #fff;
@@ -1148,9 +1147,17 @@ footer .footer-copyright p {
 		-webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.2);
 		box-shadow: 0 2px 3px rgba(0,0,0,0.2);
 		margin-top: -5px;
-		display: none;
+		opacity: 0;
 		left: 0%;
+		transition: 0.3s ease;
+		pointer-events: none;
 	}
+
+	header .nav-left .drop.active .drop-menu {
+		opacity: 1;
+		pointer-events: auto;
+	}
+
 
 	header .nav-left .drop-menu::before {
 		content: "";
