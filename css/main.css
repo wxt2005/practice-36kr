@@ -1212,6 +1212,11 @@ footer .footer-copyright p {
 		margin-top: 5px;
 	}
 
+	.container {
+		margin-top: 125px;
+	}
+
+
 	.headline article {
 		display: block;
 	}
@@ -1220,10 +1225,6 @@ footer .footer-copyright p {
 @media screen and (min-width: 935px) {
 	.row {
 		max-width: 874px;
-	}
-
-	.container {
-		margin-top: 125px;
 	}
 
 	.content {

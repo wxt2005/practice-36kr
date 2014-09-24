@@ -57,4 +57,11 @@ $(function() {
         }
         return false;
     });
+
+    /**
+     * 页面点击关闭下拉菜单事件
+     */
+    $('html').click(function() {
+        $dropMenus.hide();
+    });
 });
