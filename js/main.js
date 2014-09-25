@@ -60,7 +60,9 @@ $(function() {
     /**
      * 页面点击关闭下拉菜单事件
      */
-    $('html').click(function() {
-        $dropButtons.removeClass('active');
+    $(document).click(function(ev) {
+        if ($dropMenus.has($(ev.target)).length === 0) {
+            $dropButtons.removeClass('active');
+        }
     });
 });
