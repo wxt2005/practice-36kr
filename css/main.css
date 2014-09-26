@@ -111,6 +111,16 @@ input::-webkit-search-cancel-button {
 	*zoom: 1;
 }
 
+::-moz-selection {
+	color: #fff;
+	background: #364658;
+}
+
+::selection {
+	color: #fff;
+	background: #364658;
+}
+
 /* header */
 header {
 	top: 0;
