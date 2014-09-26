@@ -160,6 +160,13 @@ header .nav-left {
 	border-top: 1px solid #e6eaed;
 	width: 100%;
 	display: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+header .nav-left .drop-menu,
+header .nav-left .more {
+	display: none;
 }
 
 header .nav-left li {
@@ -1114,6 +1121,8 @@ footer .footer-copyright p {
 	header .nav-left {
 		margin-left: 20px;
 		border-top: none;
+		padding-top: 0;
+		padding-bottom: 0;
 		width: auto;
 	}
 
@@ -1136,6 +1145,11 @@ footer .footer-copyright p {
 		position: absolute;
 		top: 48%;
 		right: 4px;
+	}
+
+	header .nav-left .drop-menu,
+	header .nav-left .more {
+		display: block;
 	}
 
 	header .mini {

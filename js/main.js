@@ -13,6 +13,9 @@ $(function() {
     var $header = $('header');
     var $dropButtons = $header.find('li.drop');
     var $dropMenus = $header.find('li.drop .drop-menu');
+    var $miniMenu = $header.find('.mini');
+    var $miniSearchButton = $miniMenu.find('.search-button a');
+    var $miniMenuButton = $miniMenu.find('.menu-button a');
     var i = 0, l = 0;
 
     /**
@@ -64,5 +67,19 @@ $(function() {
         if ($dropMenus.has($(ev.target)).length === 0) {
             $dropButtons.removeClass('active');
         }
+    });
+
+    /**
+     * mini搜索按钮点击事件
+     */
+    $miniSearchButton.click(function() {
+        $header.find('div.search').toggle();
+    });
+
+    /**
+     * mini菜单按钮点击事件
+     */
+    $miniMenuButton.click(function() {
+        $header.find('nav.nav-left').toggle();
     });
 });
